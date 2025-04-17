@@ -79,9 +79,6 @@ li{
   color: var(--textColor);
 }
 
-.btn .icon{
-  margin-left: .5rem;
-}
 
 .btn:hover{
   background: var(--PrimaryColor);
