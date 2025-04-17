@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poetsen One", sans-serif;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::selection{
+  background: var(--grayColor);
+  color: var(--blackColor);
+}
+/* color plete && st */
+
+:root{
+    --PrimaryColor:#57433a;
+    --whiteColor:#f9f8f4;
+    --grayColor:#b6b4ad;
+    --brownColor:#352a22;
+    --blackColor:#181611;
+
+    /* Font Typography */
+    --biggestFontSize:2.5rem;
+    --h1FontSize:1.5rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize:.938rem;
+    --smallFontSize:.813rem;
+    --smallestFontSize:.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Default styles */
+html{
+  font-size: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.icon{
+  font-size: var(--h2FontSize);
+  cursor: pointer;
+}
+
+.flex{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+  gap:.8rem;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--grayColor);
+  box-shadow: 0 2px 4px var(--inputColor);
+  padding: .8rem 1rem ;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: var(--textColor);
+}
+
+.btn .icon{
+  margin-left: .5rem;
+}
+
+.btn:hover{
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+
+body{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  padding: 1rem;
+  text-transform: capitalize;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--PrimaryColor);
+    overflow: hidden;
+    box-shadow: 2px 2px 8px var(--greyText);
+    -o-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    border-radius: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hide The Scroll Thumb */
+
+::-webkit-scrollbar{
+  display: none;
 }
+ 

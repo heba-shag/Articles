@@ -1,0 +1,83 @@
+.home-container{
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .main-section{
+        background: var(--whiteColor);
+        border-radius: 2rem;
+        border: .1rem var(--blackColor) solid;
+        height: 85%;
+        width: 95%;
+        overflow: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h1{
+            font-size: var(--h1FontSize);
+            margin:0 1rem 0;
+            border-radius: 3.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem 1rem;
+            color: var(--brownColor);
+            font-weight: 800;
+            letter-spacing: .2rem;
+            border: .2rem var(--PrimaryColor) dotted;
+        }
+
+        .articles-container{
+            flex-wrap: wrap;
+            height: 80%;
+            margin: 0 2rem;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+            .article-card{
+                background: #fdf5e6;
+                border-radius: 0.8rem;
+                box-shadow: 1px 1px 5px var(--grayColor);
+                color: var(--PrimaryColor);
+                width: 48%;
+                height: 70%;
+                margin: .2rem .2rem;
+                justify-content: center;
+
+                .article-box{
+                    h2{
+                        padding-left: .2rem;
+                        text-align: start;
+                        position: relative;
+                        color: red;
+                        font-size: var(--h1FontSize);
+                    }
+                    
+                    h3{
+                        font-size: var(--smallFontSize);
+                        text-align: end;
+                        padding: 3px 10px;
+                        color: darkred;
+                        position: relative;
+                    }
+
+                    p{
+                        font-weight: 400;
+                        height: 8rem;
+                        overflow: auto;
+                        padding: 0 1rem;
+                        text-align: start;
+                        border-bottom: 1px black solid;
+                    }
+                }
+                .buttons{
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+ }

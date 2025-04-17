@@ -1,0 +1,40 @@
+.navbar-container{
+    font-size: var(--h2FontSize);
+    justify-content: space-around;
+    border-bottom: .2rem var(--whiteColor) solid;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    
+    .logo{
+        color: var(--whiteColor);
+        font-size: var(--h1FontSize);
+        letter-spacing: .3rem;
+        font-weight: 700;
+
+        span{
+            color: var(--grayColor);
+            font-size: var(--biggestFontSize);
+            font-weight: 900;
+        }
+    }
+
+    .items{
+        width: 45%;
+        margin: 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+        
+        .link{
+            color: white;
+            /* margin: 1.2rem; */
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        :hover{
+            /* color:red; */
+            border-bottom: .1rem var(--whiteColor) dotted;
+        }
+    }
+}
